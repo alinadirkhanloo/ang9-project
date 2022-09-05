@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-Ua-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distortion Effect Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        document.body.className += " js-loading";
+        window.addEventListener("load",showPage,false);
+        function showPage(){
+            document.body.className = document.body.replace("js-loading","");
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- OVERLAY -->
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <div class="menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="lang">eng</div>
+            <div class="search">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+        </div>
+
+
+        <!-- SOCIAL MEDIA -->
+        <div class="media">
+            <ul>
+                <li>telegram</li>
+                <li>instagram</li>
+                <li>whatsup</li>
+            </ul>
+        </div>
+
+        <!-- TEXT -->
+        <div class="text">
+            <h1>
+                <span class="hidentext">furniture</span>
+            </h1>
+            <h2>
+                <span class="hidentext">wooden</span>
+            </h2>
+            <h3>
+                <span class="hidentext">steel and classic</span>
+            </h3>
+            <p>
+                <span class="hidentext">
+                    No list of online furniture stores
+                     would be complete without Amazon. You probably 
+                     already know you can find furniture 
+                     on the site, but did you know that Amazon has its own 
+                     furniture lines, mid-century
+                     modern, or full-on Joanna Gaines-inspired, Amazon has you covered.
+                </span>
+            </p>
+
+        </div>
+
+        <!-- SPONSOR -->
+        <div class="sponsor">
+            <img src="./images/sponsor.png" alt="">
+            <p> official sponsor</p>
+        </div>
+
+
+        <!-- DISTORTION -->
+        <div class="distortion">
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- three js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+        integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+    <!-- hover-effect js -->
+    <script src="./js/hover-effect.umd.js"></script>
+
+    <script>
+        new hoverEffect({
+            parent: document.querySelector('.distortion'),
+            intensity: 0.2,
+            image1: './images/01.jpg',
+            image2: './images/02.jpg',
+            displacementImage: './images/diss.png',
+            imagesRatio: 380 / 300
+        });
+    </script>
+</body>
+
+</html>
