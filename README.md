@@ -4,6 +4,6 @@
 ### landing page - 01
 <p align="center">
   <p align="center">
-      <img width="350" src=https://github.com/alinadirkhanloo/landig-pages/blob/main/01/images/laning-page.png" alt="Landing Page"/>
+      <img src=https://github.com/alinadirkhanloo/landig-pages/blob/main/01/images/laning-page.png" width="350" alt="Landing Page"/>
   </p>
 </p>
